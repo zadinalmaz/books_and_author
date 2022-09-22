@@ -19,6 +19,7 @@ class AuthorController extends Controller
         foreach ($authors as $author) {
             $author['count'] = count($author->books);
         }
+        //asdf
         return view('indexAuthors', compact('authors'));
     }
 
